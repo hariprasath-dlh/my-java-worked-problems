@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		String str2 = sc.nextLine();
+		String str3 = sc.nextLine();
+		String prefix = "";
+		int minlength=Math.min(str1.length(), Math.min(str2.length(), str3.length()));
+		for(int i=0; i<minlength; i++){
+		    if(str1.charAt(i)==str2.charAt(i) && str2.charAt(i) == str3.charAt(i)){
+		        prefix +=str1.charAt(i);
+		    }else{
+		        break;
+		    }
+		}
+		if(prefix.length()>0){
+		    System.out.print(prefix);
+		}
+		else{
+		    System.out.print("no prefix found");
+		}
+	}
+}
+
+output:
+flow
+flowing
+flower ------->flow
+-------------------------
+car
+cat
+cab -------------> ca
