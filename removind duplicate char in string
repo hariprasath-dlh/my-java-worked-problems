@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		String result = "";
+		for(int i=0; i<str.length(); i++){
+		    
+		    boolean alreadypresent = false;
+		    for(int j=0; j<result.length(); j++){
+		        if(str.charAt(i) == result.charAt(j)){
+		            alreadypresent = true;
+		            break;
+		        }
+		    }
+		    if(!alreadypresent){
+		        result = result + str.charAt(i);
+		    }
+		}
+		System.out.print("without Duplicate element: "+result);
+	}
+}
+
+output:
+
+programming---->progamin
