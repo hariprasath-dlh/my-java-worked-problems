@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int s = sc.nextInt();
+		int[] arr = new int[s];
+		for(int i=0; i<arr.length; i++){
+		    arr[i]= sc.nextInt();
+		}
+		int largest = Integer.MIN_VALUE;
+		int seclargest = Integer.MIN_VALUE;
+		for(int i=0; i<arr.length; i++){
+		    if(arr[i] > largest){
+		        seclargest = largest;
+		        largest = arr[i];
+		        
+		    }
+		    else if(arr[i] > seclargest && arr[i]!=largest){
+		        seclargest = arr[i];
+		    }
+		}
+		System.out.print("Second Largest Number: "+seclargest);
+	}
+}
+output: 
+size: 5
+10 20 30 40 50 -------------------> Second Largest Number: 40
