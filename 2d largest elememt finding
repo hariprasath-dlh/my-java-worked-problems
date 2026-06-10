@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int row = sc.nextInt();
+		int col = sc.nextInt();
+		int[][] arr = new int[row][col];
+		for(int i=0; i<row; i++){
+		    for(int j=0; j<col; j++){
+		        arr[i][j] = sc.nextInt();
+		    }
+		}
+		int largest = Integer.MIN_VALUE;
+		for(int i=0; i<row; i++){
+		    for(int j=0; j<col; j++){
+		        if(arr[i][j] > largest){
+		            largest = arr[i][j];
+		        }
+		    }
+		}
+		System.out.print("Largest Element is :"+ largest);
+	}
+}
+output:
+row: 3
+col: 3
+1 2 3
+4 5 6
+7 8 9   ---------------> Largest Element is 9
