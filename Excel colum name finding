@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String result = "";
+        while(n > 0){
+            n--;
+            int remainder = n % 26;
+            char ch = (char)('A' + remainder);
+            result = ch + result;
+            n = n / 26;
+        }
+        System.out.println(result);
+    }
+}
+
+output: 
+input: 27    output: AA
+input: 1    output: A
+input: 28    output: AB
