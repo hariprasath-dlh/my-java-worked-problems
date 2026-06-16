@@ -1,0 +1,24 @@
+import java.util.*;
+
+class Solution {
+
+    public boolean containsDuplicate(int[] nums) {
+        HashSet<Integer> set = new HashSet<>();
+        for(int num : nums){
+            if(set.contains(num)){
+                return true;
+            }
+            set.add(num);
+        }
+        return false;
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        int[] nums = {1,2,3};
+        Solution ans = new Solution();
+        boolean result = ans.containsDuplicate(nums);
+        System.out.print(result);
+    }
+}
+output:  {1,2,3}   --------------->  False
