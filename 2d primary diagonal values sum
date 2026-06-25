@@ -18,8 +18,7 @@ public class Main{
 	}
 }
 output
-row: 3 
-col: 3                               
+size  row: 3   col: 3                               
 1 2 3                                 
 4 5 6                                  
 7 8 9   -------------> Primary Diagonal sum: 15   ( 1 + 5 + 9)
