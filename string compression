@@ -20,4 +20,4 @@ public class Main{
 	}
 }
 output:
-aaabbbcccd ----> a3b3c3d1
+aaabbbcccaab ----> a3b3c3a2b1
