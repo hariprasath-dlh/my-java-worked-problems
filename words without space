@@ -13,3 +13,5 @@ public class Main{
 		System.out.print("Words without space :"+result);
 	}
 }
+output: 
+Hello wrold --------> HelloWorld
