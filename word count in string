@@ -12,3 +12,5 @@ public class Main{
 		System.out.print(count);
 	}
 }
+output: 
+Hello world  Hii  -------> 3
