@@ -19,3 +19,5 @@ output:
 input: 27    output: AA
 input: 1    output: A
 input: 28    output: AB
+
+in the same code if you remove the line "n = n/26" -----> it will print ABCD like that dependingon the user input Eg: input 5 ---> ABCDE
