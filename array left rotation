@@ -8,13 +8,17 @@ public class Main{
     for(int i=0; i<s; i++){
       arr[i] = sc.nextInt();
     }
-    int n = 1;
+    int n = 1;  ------------------> Array rotation value
     for(int i=0; i<s; i++){
       temp[i] = arr[(n+i)%s];
     }
     for(int i=0; i<s; i++){
-      System.out.print(temp[i]);
+      System.out.print(temp[i]+" ");
     }
   }
 }
+
+output:
+5
+1 2 3 4 5  ------------> 2 3 4 5 1
     
