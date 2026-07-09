@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		String result ="";
+		for(int i=0; i<str.length(); i++){
+		    String temp ="";
+		    for(int j=i; j<str.length(); j++){
+		        char ch = str.charAt(j);
+		        if(temp.contains(ch+"")){
+		            break;
+		        }
+		        temp = temp+ch;
+		        if(temp.length() > result.length()){
+		            result = temp;
+		        }
+		    }
+		}
+		System.out.print(result);
+	}
+}
+
+output:
+abcdeababbcd  ---------------->abcde (it will return the longest substring without repeating characters)
