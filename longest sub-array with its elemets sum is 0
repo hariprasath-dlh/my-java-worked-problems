@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] arr = new int[n];
+		for(int i=0; i<n; i++){
+		    arr[i] = sc.nextInt();
+		}
+		int maxlength = 0;
+		for(int i=0; i<arr.length; i++){
+		    int sum =0;
+		    for(int j=i; j<arr.length; j++){
+		        sum +=arr[j];
+		        if(sum==0){
+		            int length = j-i+1;
+		            if(length>maxlength){
+		                maxlength = length;
+		            }
+		        }
+		    }
+		}
+		System.out.print("Longest sub-array with sum = 0: "+maxlength);
+	}
+}
+
+output:
+size: 8    { 15, -2, 2, -8, 1, 7, 10, 23 }
+output: Longest sub-array with sum = 0: 5....because(-2,2,-8,1,7) if you add all these continuous elements it gives sum is 0
